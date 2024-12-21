@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #ffcc66;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #e68a00;
+}
+ 
+.winks {
+    color: #080101;
+
+}
+
+header h1 {
+    margin: 0;
+    color: #080101;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e68a00;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Figure Styles */
+figure {
+    margin: 20px auto;
+    text-align: center;
+}
+
+figure img {
+    border: 2px solid #e68a00;
+    border-radius: 10px;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Main Content */
+main {
+    margin: 20px;
+}
+
+article {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+article h2 {
+    color: #e68a00;
+    font-size: 1.8rem;
+}
+
+article p {
+    margin: 10px 0;
+}
+
+/* Aside */
+aside {
+    margin-top: 20px;
+    background-color: #fff5e6;
+    border: 1px solid #ffcc99;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+aside h3 {
+    margin-top: 0;
+    color: #e68a00;
+}
+
+/* Details */
+details {
+    margin-top: 10px;
+}
+
+details summary {
+    font-weight: bold;
+    color: #e68a00;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+}
+
+table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #e68a00;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #ffe6cc;
+    color: #e68a00;
+}
+
+table tfoot td {
+    font-weight: bold;
+    background-color: #fff2e6;
+}
+
+/* Links */
+article a, main a {
+    color: #e68a00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article a:hover, main a:hover {
+    text-decoration: underline;
+}
+
+/* Definition List */
+dl {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+dl dt {
+    font-weight: bold;
+    color: #e68a00;
+    margin-top: 10px;
+}
+
+dl dd {
+    margin: 0 0 10px 20px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #ffcc66;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 3px solid #e68a00;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: #e68a00;
+    font-weight: bold;
+}
+
+/* Specific Styles for Hours Page */
+main p {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+nav ul li a[href="/"], 
+nav ul li a[href*="contact.html"] {
+    color: #007acc;
+}
+
+nav ul li a[href="/"]:hover, 
+nav ul li a[href*="contact.html"]:hover {
+    color: #005fa3;
+}
