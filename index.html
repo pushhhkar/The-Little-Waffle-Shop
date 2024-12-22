@@ -24,7 +24,7 @@
                 <a href="hours.html">Store Hours </abbr></a>
             </li>
             <li>
-                <a href="contact.html">Contact us </abbr></a>
+                <a href="contact.html">Contact us </abbr></a> 
             </li>
         </ul>
     </nav>
@@ -78,7 +78,7 @@
                   <td>INR 400</td>
                 </tr>
                 <tr>
-                  <th scope="row" rowspan="3">Beligium</th>  
+                  <th scope="row" rowspan="3">Belgium</th>  
                   <td>1</td>
                   <td>INR 170</td>
                 </tr>
@@ -90,6 +90,20 @@
                   <td>3</td>
                   <td>INR 450</td>
                 </tr>
+                <tr>
+                  <th scope="row" rowspan="3">Nutella Hazelnut</th>  
+                  <td>1</td>
+                  <td>INR 180</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>INR 340</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>INR 500</td>
+                </tr>
+
             </tbody>
             <tfoot>
                 <tr>
@@ -97,6 +111,25 @@
                 </tr>
             </tfoot>
         </table>
+        <br>
+         <p>
+          <fieldset class="mango">
+         <h2>You can order here-</h2>
+         <label for="Waffle">Favourite Waffle:</label>
+         <input type="text" name="waffle" id="waffle" list="waffle-list" placeholder="Waffles" >
+         <datalist id="waffle-list">
+         <option value="brussels-waffle">
+         <option value="belgium-waffle">
+         <option value="Nutella-Hazelnut-waffle">
+         <option value="Combo">
+         </datalist>
+         <label for="Quantity">Quantity</label>
+         <input type="number" name="quantity" id="quantity" list="no of waffles" min="1" max="5" placeholder="qty">
+         <br>
+         <button type="submit">order</button>
+         <button type="reset">reset</button>
+         </p>
+        </fieldset>
         <br>
         <p>
             <a href="#">Back To Top</a>
