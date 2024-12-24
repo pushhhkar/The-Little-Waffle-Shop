@@ -46,7 +46,9 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
-
+.italics {
+    font-style: oblique;
+}
 /* Figure Styles */
 figure {
     margin: 20px auto;
