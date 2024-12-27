@@ -33,9 +33,20 @@ nav ul {
 
 nav ul li {
     display: inline;
+    
     margin: 0 10px;
 }
+.submit{
+    margin: 40px 5px;
+    padding: 10px 15px;
+    color: white;
+    background:  #ffd98c;
+    transition: background 300ms ease-in-out;;
+}
+.submit:hover{
+    background:  #fdc961;
 
+}
 nav ul li a {
     text-decoration: none;
     color: #e68a00;
