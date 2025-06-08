@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Pushkar Kumar" />
+  <meta name="description" content="Sign Up for The Little Waffle Shop" />
+  <title>Sign Up | LWS</title>
+  <link rel="icon" href="waffleicon.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .signup-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px auto;
+      max-width: 900px;
+      padding: 20px;
+      background: #fff5e6;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(230, 138, 0, 0.3);
+    }
+
+    .signup-container img {
+      width: 300px;
+      height: 300px;
+      border: 3px solid #e68a00;
+      border-radius: 15px;
+      object-fit: cover;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-section {
+      flex: 1;
+      max-width: 350px;
+    }
+
+    .form-section h2 {
+      color: #e68a00;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .submit {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to THE LITTLE WAFFLE SHOP</h1>
+  </header>
+
+  <main>
+    <section class="signup-container">
+      <img src="wafffl.jpg" alt="Waffle" />
+      <section class="form-section">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+          <p>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Your username" required />
+          </p>
+          <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Your password" required />
+          </p>
+          <p>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit number" required />
+          </p>
+          <p>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Your address" required />
+          </p>
+          <button type="submit" class="submit">Sign Up</button>
+          <p id="error" style="color: red;"></p>
+        </form>
+      </section>
+      <img src="waffle&drink.jpg" alt="Waffle and Drink" />
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; The Little Waffle Shop</p>
+  </footer>
+
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const address = document.getElementById('address').value.trim();
+      const errorMsg = document.getElementById('error');
+
+      const phonePattern = /^[0-9]{10}$/;
+
+      if (!username || !password || !address || !phonePattern.test(phone)) {
+        errorMsg.textContent = "Please fill all fields correctly. Phone must be 10 digits.";
+        return;
+      }
+
+      // If all validations pass
+      errorMsg.textContent = "";
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>

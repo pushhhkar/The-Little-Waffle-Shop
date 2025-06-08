@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Pushkar Kumar" />
+  <meta name="description" content="Login to The Little Waffle Shop" />
+  <title>Login | LWS</title>
+  <link rel="icon" href="waffleicon.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .login-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px auto;
+      max-width: 900px;
+      padding: 20px;
+      background: #fff5e6;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(230, 138, 0, 0.3);
+    }
+
+    .login-container img {
+      width: 300px;      
+      height: 300px;      
+      border: 3px solid #e68a00;
+      border-radius: 15px;
+      object-fit: cover; 
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-section {
+      flex: 1;
+      max-width: 350px;
+      position: relative;
+    }
+
+    .form-section h2 {
+      color: #e68a00;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Style buttons container to align side by side */
+    .button-group {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    /* Buttons styling */
+    .submit,
+    .signup-btn {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      background-color: #e68a00;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit:hover,
+    .signup-btn:hover {
+      background-color: #c67a00;
+    }
+
+    .signup-btn {
+      background-color: #008cba; /* different color for signup */
+    }
+
+    .signup-btn:hover {
+      background-color: #006f94;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to THE LITTLE WAFFLE SHOP</h1>
+  </header>
+  <main>
+    <section class="login-container">
+      <img src="wafffl.jpg" alt="Waffle" />
+      <section class="form-section">
+        <h2>Login</h2>
+        <form id="authForm">
+          <p>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Your username" required />
+          </p>
+          <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Your password" required />
+          </p>
+          <div class="button-group">
+            <button type="submit" class="submit">Login</button>
+            <a href="signup.html" class="signup-btn">Sign Up</a>
+          </div>
+          <p id="error" style="color: red;"></p>
+        </form>
+      </section>
+      <img src="waffle&drink.jpg" alt="Waffle and Drink" />
+    </section>
+  </main>
+  <footer>
+    <p>Copyright &copy; The Little Waffle Shop</p>
+  </footer>
+
+  <script src="java.js"></script>
+</body>
+</html>
