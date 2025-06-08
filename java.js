@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Login successful! Redirecting...");
         loginForm.reset();
         // Redirect after alert
-        window.location.href = "index.html";
+        window.location.href = "home.html";
       }
     });
   }
